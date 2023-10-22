@@ -52,6 +52,8 @@ class MainActivity : AppCompatActivity() {
             R.id.buttonDivision -> {
                 calculo = (((editTextNumero1.text.toString()).toDouble() / (editTextNumero2.text.toString()).toDouble()))
                 textViewEtiqueta.text = String.format("%.2f",calculo)
+            }else ->{
+            textViewEtiqueta.text = "Boton erroneo"
             }
         }
     }
